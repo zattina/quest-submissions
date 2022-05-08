@@ -1,0 +1,40 @@
+Chapter1-1day
+1.Explain what the Blockchain is in your own words.
+A blockchain is an electronic type of ledger.
+It has been the main mechanism used for virtual currency since the introduction of Bitcoin in 2009.
+As the name suggests, it works by connecting blocks like a chain to generate a ledger.
+The difference between this system and existing ledger systems is that it is (1) decentralized and (2) difficult to tamper with.
+
+(1) Distributed
+Conventional ledger systems required a centralized organization to manage the ledger. With blockchain, however, the ledger is open to the entire world, and the ledger is monitored by many clients in the network.
+Therefore, it is as if the information is distributed and managed by many clients.
+
+(2) Difficult to falsify
+The ledger is a collection of the history up to now as a block. Therefore, if a malicious third party tries to tamper with a transaction, it is necessary to modify all previous blocks, and it is very difficult to tamper with the contents of the transaction.
+
+2.Explain what a Smart Contract is.
+Smart contracts are a mechanism in which a program that describes the transaction details is prepared in advance, and the transaction details are completed at the moment of receipt.
+Until the advent of smart contracts, electronic transactions required a giver, a receiver, and a third party to monitor the transaction.
+However, it is troublesome to prepare a third party to monitor each transaction when conducting a peer-to-peer transaction.
+With smart contracts, transactions can be completed without the need for a third party and without fraud, because the transaction is carried out after both parties agree to the predetermined transaction details.
+
+3.Explain the difference between a script and a transaction.
+Scripts can only be used to VIEW data on the blockchain and cannot be modified.
+Transactions, in contrast, can modify the data on the blockchain.
+
+Chapter1-2day
+1.What are the 5 Cadence Programming Language Pillars?
+①Safety and Security
+②Clarity
+③Approachability
+④Developer Experience
+⑤Resource Oriented Programming
+
+2.In your opinion, even without knowing anything about the Blockchain or coding, why could the 5 Pillars be useful (you don't have to answer this for #5)?
+1.Because fraud will no longer occur in smart contract transactions.
+
+2.Because the person conducting the transaction can understand the content well.
+
+3.Allow developers to enter development with a shorter learning curve
+
+4.Because we don't have to spend time looking for errors.
