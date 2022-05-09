@@ -21,7 +21,7 @@ It is possible to do all the processing in the prepare phase, but it is better t
 >○A function named updateMyNumber that takes in a new number named newNumber as a parameter that has type Int and updates myNumber to be newNumber
 
 Contract code
-'''
+```
 pub contract NumberChange {
 
     pub var myNumber: Int
@@ -35,24 +35,24 @@ pub contract NumberChange {
 
 
 }
-'''
+```
 
 >●Add a script that reads myNumber from the contract
 
 Script templates
-'''
+```
 import NumberChange from 0x04
 
 pub fun main(): Int {
     return NumberChange.myNumber
 }
-'''
+```
 
 >●Add a transaction that takes in a parameter named myNewNumber and passes it into the updateMyNumber function.
 >Verify that your number changed by running the script again.
 
 Transaction templates
-'''
+```
 import NumberChange from 0x04
 
 transaction(mynewNumber: Int) {
@@ -63,7 +63,13 @@ transaction(mynewNumber: Int) {
     NumberChange.updateMyNumber(newNumber: mynewNumber)
   }
 }
-'''
+```
+
+Input number
+
+![スクリーンショット (304)](https://user-images.githubusercontent.com/104513005/167432042-02b8dd45-4f27-48f6-9e75-4057d06b605c.png)
+
 
 Script result
-![スクリーンショット (302)](https://user-images.githubusercontent.com/104513005/167430208-07a45f50-6fcf-4eeb-a8f1-3383cee7dea1.png)
+
+![スクリーンショット (305)](https://user-images.githubusercontent.com/104513005/167432314-52028107-689e-498f-87a5-007bf185f684.png)
