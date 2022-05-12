@@ -57,3 +57,6 @@ pub fun main(Account: Address): Totalling.Grade {
 }
 ```
 ![スクリーンショット (313)](https://user-images.githubusercontent.com/104513005/168073865-62e30de1-1005-4dde-ad67-426b4a834ae9.png)
+
+Result
+{"type":"Struct","value":{"id":"A.0000000000000001.Totalling.Grade","fields":[{"name":"Name","value":{"type":"String","value":"zatty"}},{"name":"Score","value":{"type":"Int","value":"77"}},{"name":"Rank","value":{"type":"Int","value":"7"}},{"name":"Account","value":{"type":"Address","value":"0x0000000000000077"}}]}}
