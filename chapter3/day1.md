@@ -1,4 +1,5 @@
 >1.In words, list 3 reasons why structs are different from resources.
+
 Reason1：To avoid losing NFTs easily by making them more difficult to handle.
 Reason2：To prevent NFTs from being easily copied by making them more difficult to handle.
 Reason3：To prevent NFTs from being moved easily by making them more difficult to handle
