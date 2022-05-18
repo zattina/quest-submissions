@@ -28,7 +28,14 @@ pub contract TitleMemo {
         let oldTitle <- self.dictionaryOfTitles[key] <- title
         destroy oldTitle
     }
-
+    
+    //added on May 18 <start from here>  
+    pub fun removedictionaryTitle(key: String): @Title {
+        let title <- self.dictionaryOfTitles.remove(key: key)!
+        return <- title
+    }
+    //added on May 18 <end>
+    
     init() {
         self.arrayOfTitles <- []
         self.dictionaryOfTitles <- {}
