@@ -57,6 +57,22 @@ transaction() {
   }
 }
 ```
-
+![スクリーンショット (333)](https://user-images.githubusercontent.com/104513005/169654735-a31ff1f6-b0eb-41ff-b88f-11f6dffc1e42.png)
 
 >  ii. A transaction that first saves the resource to account storage, then borrows a reference to it, and logs a field inside the resource.
+```
+import Student from 0x01
+transaction() {
+  prepare(signer: AuthAccount) {
+    let ScoreResource <- Student.createScore()
+    signer.save(<- ScoreResource, to: /storage/MyScoreResource) 
+    let LoadScoreResource = signer.borrow<&Student.Score>(from: /storage/MyScoreResource)!
+    log(LoadScoreResource.name) 
+  }
+
+  execute {
+
+  }
+}
+```
+![スクリーンショット (335)](https://user-images.githubusercontent.com/104513005/169654860-753d60ce-9428-4c0b-93e0-4f7bb1371091.png)
